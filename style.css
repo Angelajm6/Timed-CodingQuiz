@@ -1,21 +1,25 @@
 * {
-    background:lightskyblue;
     margin:0;
     padding:0;
     box-sizing:border-box;
     font-family:sans-serif;
 }
 
+body {
+    background:lightskyblue;
+}
+
 /* Importing google fonts */
 
-.start-btn{
+.start-btn,
+.info-box{
     position:absolute;
     top: 50%;
     left:50%;
     transform:translate (-50%, -50%);
 }
 
-
+/* Quiz button styling*/
 .start-btn button{
     font-size:25px;
     font-weight:500;
@@ -25,4 +29,63 @@
     color:white;
     background:black;
     cursor:pointer;
+}
+
+.info-box{
+    display:none;
+    width:540px;
+    background:white;
+    border-radius:5px;
+    align-items: center;
+}
+
+.info-box .title{
+    height:60px;
+    width:100%;
+    border-bottom:1px solid lightgrey;
+    display:flex;
+    align-items:center;
+    padding:0 35px;
+    font-size:25px;
+    font-weight:600;
+}
+
+.info-box .buttons{
+    height:60px;
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    padding:0 35px;
+    border-top:1px solid lightgrey;
+}
+
+.info-box .buttons button{
+    margin:0 5px;
+    height:40px;
+    width:100px;
+    border:1px solid transparent;
+    border-radius:5px;
+    color:white;
+    font-size:16px;
+    font-weight:500;
+    cursor:pointer;
+}
+
+.buttons button.restart{
+    color:black;
+    border-color:black;
+}
+
+.buttons button.restart{
+    background:white;
+}
+
+.buttons button.quit{
+    color:black;
+    background:blue;
+}
+
+.buttons button.quit{
+    color: lightcoral;
+    border-color:lightcoral;
 }
