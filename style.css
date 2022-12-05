@@ -1,12 +1,10 @@
-* {
-    margin:0;
-    padding:0;
+*, *::before, *::after{
     box-sizing:border-box;
     font-family:sans-serif;
 }
 
 body {
-    background:lightskyblue;
+    background:;
 }
 
 /* ----------Importing google fonts------------ */
@@ -30,9 +28,10 @@ body {
     font-weight:500;
     padding:15px 30px;
     outline:none;
+    border:none;
     border-radius:5px;
-    color:white;
-    background:black;
+    color:#007bff;
+    background:white;
     cursor:pointer;
 }
 
