@@ -92,6 +92,7 @@ body {
 }
 
 .quiz.box{
+    display:none;
     width:550px;
     background:white;
     border-radius:5px;
@@ -207,6 +208,7 @@ section .option-list .option{
     background:red;
 }
 
+/*-------------footer-------------*/
 .quiz-box footer{
     padding: o 30px;
     height:60px;
@@ -238,4 +240,12 @@ footer .next-btn{
     font-weight:400;
     border:none;
     outline:none;
+    background:#007bff;
+    border-radius:5px;
+    border:1px solid #007bff;
+    cursor:pointer;
+}
+
+footer .next-btn:hover{
+    background: #007bff;
 }
