@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Coding Quiz</title>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
   </head>
 
   <body>
@@ -19,53 +20,14 @@
           <button class="btn">Answer 4</button>   
         </div>
       </div>
-    </div>
-    <!--------- Start Quiz Button ------->
-    <div class="start-btn"><button>Start Quiz</button></div>
-
-    <!---------- info box ------------>
-    <div class="info-box"></div>
-        <div class="title">
-          <span>Take this short Quiz to test your knowledge on Coding! </span>
-        </div>
-
-        <div class="buttons">
-          <button class="quit">Exit Quiz</button>
-          <button class="restart">Continue</button>
-        </div>
-
-      <!---------- Quiz Box ------------>
-      <div class="quiz-box">
-        <header>
-          <div class="title-header">Quiz Application</div>
-          <div class="timer">
-            <div class="timer-text">Time Left</div>
-            <div class="timer-sec">15</div>
-          </div>
-        </header>
-
-        <!------------ Footer ------------>
-        <footer>
-          <div class="total-que">
-            <span><p>2</p>of<p>5</p>Questions</span>
-          </div>
-          <button class="next-btn">Next Question</button>
-        </footer>
+    <!---------- Start and Next buttons ------------>
+      <div class="buttons">
+        <button id="start-btn" class="start-btn">Start Quiz</button>
+        <button id="continue-btn" class="continue-btn">Continue</button>
       </div>
+    </div>
 
-        <!--------- Result Box ------------>
-        <div class="results">
-          <div class="icon">
-            <i class="fa-crown"></i>
-          </div>
-          <div class="complete-text">Congratulations!!You've completed the Quiz!</div>
-          <div class="score-text">
-            <span>you got only <p> 2 </p> out of <p>5</p></span>
-          </div>
-          <div class="buttons" >
-            <button class="restart">Replay Quiz</button>
-            <button class="quit">Quit Quiz</button>
-          </div>    
-          
-        </div>
+  
+     
   </body>
+
