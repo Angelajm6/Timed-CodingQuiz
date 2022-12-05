@@ -205,3 +205,24 @@ section .option-list .option{
     color:red;
     border-color:#239023;
     background:red;
+}
+
+.quiz-box footer{
+    padding: o 30px;
+    height:60px;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+
+.quiz-box footer .total-que span{
+    display:flex;
+    user-select:none;
+}
+
+footer .total-que span p{
+    font-weight:500;
+    padding:0 5px;
+}
