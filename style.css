@@ -299,4 +299,7 @@ footer .next-btn:hover{
     font-weight:50;
     border-radius:5px;
     border:1px solid #007bff;
+    cursor:pointer;
+    transition:all 0.3s ease;
 }
+
