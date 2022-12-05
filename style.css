@@ -198,4 +198,10 @@ section .option-list .option{
 .option-list .option .icon-tick{
     color:#239023;
     border-color:#239023;
+    background:white;
 }
+
+.option-list .option .icon-cross{
+    color:red;
+    border-color:#239023;
+    background:red;
