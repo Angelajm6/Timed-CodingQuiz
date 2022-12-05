@@ -74,6 +74,16 @@ body.wrong {
   padding:10px 20px;
 }
 
+.buttons {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.hide {
+  display:none;
+}
+
 
 /*
     <!---------- Quiz Box ------------>
