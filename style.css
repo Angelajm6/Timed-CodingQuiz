@@ -268,3 +268,35 @@ footer .next-btn:hover{
     color:#007bff;
     margin-bottom:10px;
 }
+
+.results .complete-text{
+    font-size:20px;
+    font-weight:500px;
+}
+
+.results .score-text span{
+    display:flex;
+    margin:10px 0;
+    font-size:18px;
+    font-weight:500;
+}
+
+.score-text span p{
+    font-weight:500;
+}
+
+.results .buttons{
+    display:flex;
+    margin:20px 0;
+}
+
+.results .buttons button{
+    margin:0 10px;
+    height:45px;
+    padding:0 20px;
+    border: none;
+    font-size:18px;
+    font-weight:50;
+    border-radius:5px;
+    border:1px solid #007bff;
+}
