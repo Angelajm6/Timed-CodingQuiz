@@ -9,7 +9,7 @@ body {
     background:lightskyblue;
 }
 
-/* Importing google fonts */
+/* ----------Importing google fonts------------ */
 
 .start-btn,
 .info-box,
@@ -20,7 +20,7 @@ body {
     transform:translate (-50%, -50%);
 }
 
-/* Quiz button styling*/
+/* ------------Quiz button styling------------ */
 .start-btn button{
     font-size:25px;
     font-weight:500;
@@ -162,4 +162,40 @@ quiz-box header .timer .timer-sec{
 .quiz-box section .option-list{
     padding:20px 0;
     display:block;
+}
+
+/* -----------Main Section---------- */
+section .option-list .option{
+    background:aliceblue;
+    border:1px solid grey;
+    border-radius:5px;
+    padding:8px 15px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    cursor:pointer;
+    transition:all 0.5s ease;
+}
+
+.option-list .option:hover{
+    color:#004085;
+    background:#cce5ff;
+    border-color:#b8daff;
+}
+
+.option-list .option:last-child{
+    margin-bottom:0px;
+}
+
+.option-list .option .icon{
+    height:26px;
+    width:26px;
+    border:2px solid transparent;
+    border-radius:50%;
+    text-align:center;
+}
+
+.option-list .option .icon-tick{
+    color:#239023;
+    border-color:#239023;
 }
