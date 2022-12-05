@@ -99,6 +99,8 @@ body {
 }
 
 .quiz-box header{
+    position:relative;
+    z-index:99;
     height:70px;
     padding:0 30px;
     background:white;
@@ -145,4 +147,19 @@ quiz-box header .timer .timer-sec{
     border-radius: 5px;
     border:1px solid #343a40;
     user-select:none;
+}
+
+.quiz-box section{
+    padding:25px 30px 20px 30px;
+    background:#fff;
+}
+
+.quiz-box section .que-text{
+    font-size:25px;
+    font-weight:600;
+}
+
+.quiz-box section .option-list{
+    padding:20px 0;
+    display:block;
 }
