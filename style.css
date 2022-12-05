@@ -226,3 +226,16 @@ footer .total-que span p{
     font-weight:500;
     padding:0 5px;
 }
+
+footer .total-que span p:first-child{
+    padding-left:0px;
+}
+
+footer .next-btn{
+    height:40px;
+    padding:0 13px;
+    font-size:18px;
+    font-weight:400;
+    border:none;
+    outline:none;
+}
