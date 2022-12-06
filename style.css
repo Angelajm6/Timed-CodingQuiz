@@ -39,7 +39,7 @@ body.wrong {
     box-shadow:0 0 10px 2px;
 }
 
-.btn.grid {
+.btn-grid {
     display:grid;
     grid-template-columns:repeat(2,auto);
     gap:10px;
@@ -64,11 +64,11 @@ body.wrong {
   color:black;
 }
 
-.btn-wrong {
+.btn.wrong {
   --hue: var(--hue-correct);
 }
 
-.start-btn, .next-btn {
+.start-btn, .continue-btn {
   font-size:1.5rem;
   font-weight: bold;
   padding:10px 20px;

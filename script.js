@@ -1,8 +1,8 @@
 const startButton = document.getElementById('start-btn')
-const continueButton = document.getElementById ('continue-btn')
-const questionBoxElement = document.getElementById ('question-box')
+const continueButton = document.getElementById('continue-btn')
+const questionBoxElement = document.getElementById('question-box')
 const questionElement = document.getElementById('question')
-const answersElement = document.getElementById ('answers')
+const answersElement = document.getElementById('answers')
 
 
 //This will default both of the values to undefined//
@@ -11,20 +11,20 @@ let shuffledQuestions, currentQuestionIndex
 startButton.addEventListener('click', startGame)
 continueButton.addEventListener('click', () => {
     currentQuestionIndex++
-    setNextquestion()
+    setNextQuestion()
 })
 
 function startGame() {
-console.log('Game Started')
-startButton.classList.add('hide')
-shuffledQuestions = questions.sort(() => Math.random() - .5)
-currentQuestionIndex = 0
-questionBoxElement.classList.remove('hide')
-setNextQuestion()
+    console.log('Game Started')
+    startButton.classList.add('hide')
+    shuffledQuestions = questions.sort(() => Math.random() - .5)
+    currentQuestionIndex = 0
+    questionBoxElement.classList.remove('hide')
+    setNextQuestion()
 }
 
-function setNextQuestion() {
-showQuestion(shuffledQuestions[currentQuestionIndex])
+function setNextQuestion() {    
+    showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 
 function showQuestion(question) {
@@ -56,11 +56,16 @@ function selectAnswer(e) {
     Array.from(answersElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
-    nextButton.classList.remove('hide')
+    if (shuffledQuestions.lenght > currentQuestionIndex + 1) {
+        continueButton.classList.remove('hide')
+    } else{
+        startButton.innerText ='Restart'
+        startButton.classList.remove('hide')
+    }
 }
 
 function setStatusClass(element, correct) {
-    clearstatusClass(element)
+    setStatusClass(element)
     if(correct) {
         element.classList.add('correct')
     } else {
@@ -78,7 +83,29 @@ const questions = [
         question: 'What does HTML stand for?',
         answers: [
            { text: 'Hyper Tool Markup Language', correct:false},
-           { text: 'Hyper Text Markup Language', correct:true}
+           { text: 'Hyper Text Markup Language', correct:true},
+           { text: 'Hypo Tiny Made Language', correct:false},
+           { text: 'Hypo Text Manual Language', correct:false}
+
+        ]
+    },
+    {
+        question: 'What does CSS stand for?',
+        answers: [
+           { text: 'Cascading Styling Sheets', correct:false},
+           { text: 'Calling Sheets Simultaneoulsy', correct:false},
+           { text: 'Case Sensitive Sheets', correct:false},
+           { text: 'Cascading Style Sheets', correct:true}
+
+        ]
+    },
+    {
+        question: 'What programming language is used to give functionality to a website?',
+        answers: [
+           { text: 'JavaScript', correct:true},
+           { text: 'CSS', correct:false},
+           { text: 'C++', correct:false},
+           { text: 'HTML', correct:false}
         ]
     }
 ] 
