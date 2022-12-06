@@ -1,4 +1,5 @@
 const startButton = document.getElementById('start-btn')
+const continueButton = document.getElementById ('continue-btn')
 const questionBoxElement = document.getElementById ('question-box')
 const questionElement = document.getElementById('question')
 const answersElement = document.getElementById ('answers')
@@ -36,6 +37,13 @@ function showQuestion(question) {
     })
 }
 
+function resetState() {
+    continueButton.classList.add('hide')
+    while (answerButtonsElement.firstChild) {
+        answerButtonsElement.removeChild
+        (answerButtonsElement.firstChild)
+    }
+}
 function selectAnswer() {
 
 }
